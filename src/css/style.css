@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+body {
+    font-family: Public Sans;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Public Sans;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.items {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.cabecalho nav ul.items li {
+    padding: 10px 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.cabecalho nav ul li button {
+    border-radius: 10px;
+    background-color: #5BC241;
+    padding: 18px;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.cabecalho nav ul li button:hover {
+    color: #5BC241;
+    background-color: #fff;
+}
+
+.cabecalho nav ul li.items-menu:hover {
+    background-color: #5BC241;
+    color: #fff;
+    transform: scale(1.1);
+}
