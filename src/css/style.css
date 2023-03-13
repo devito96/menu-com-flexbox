@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
 
 body {
-    font-family: Public Sans;
+    font-family: 'Public Sans' , sans-serif;
 }
 
 
 .cabecalho {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding: 45px;
 }
 
 .cabecalho .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-family: Public Sans;
-    font-size: 20px;
     font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 0em;
+}
+
+.cabecalho .logo h1 {
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 .items {
@@ -34,13 +33,13 @@ body {
     flex-wrap: wrap;
 }
 
-.cabecalho nav ul.items li {
+.cabecalho ul.items li {
     padding: 10px 20px;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.cabecalho nav ul li button {
+.cabecalho li button {
     border-radius: 10px;
     background-color: #5BC241;
     padding: 18px;
@@ -50,15 +49,15 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
-
+    margin-left: 15px;
 }
 
-.cabecalho nav ul li button:hover {
+.cabecalho li button:hover {
     color: #5BC241;
     background-color: #fff;
 }
 
-.cabecalho nav ul li.items-menu:hover {
+.cabecalho li.items-menu:hover {
     background-color: #5BC241;
     color: #fff;
     transform: scale(1.1);
